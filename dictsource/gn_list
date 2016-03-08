@@ -1,0 +1,69 @@
+﻿
+// This file is UTF-8 encoded
+// Updated 2016 march 4 by Chris, Christian Leo M, <llajta2012@gmail.com>
+
+// letter names
+
+a	a
+ch	Se
+e	e:
+g	ge:
+ĝ	n.e~
+h	he
+i	i:
+j	dZe
+k	ke
+l	le
+m	me
+mb	mbe:
+n	ne
+nd	Nde
+ng	Nge:
+nt	Nte
+ñ	n^e
+o	o:
+p	pe:
+r	@-*e:
+rr	R*e:
+s	se
+t	te:
+u	u:
+v	ve:
+y	y:
+_'	pus'o
+ʻ	pus'o
+
+b	be
+c	se
+d	de
+f	'efe
+q	ku
+w	v'e||_k'o~i
+x	'ekis
+z	T'eta
+
+_á	$accent
+_é	$accent
+_í	$accent
+_ó	$accent
+_ú	$accent
+_ý	$accent
+_ã	$accent
+_ẽ	e~
+_ê	e~:
+_ĩ	$accent
+_õ	$accent
+_ũ	$accent
+_ỹ	y~
+_ĝ	$accent
+
+
+// Accent names
+_acu	muanduh'e~
+// _cir	muanduh,e~||tigu'a~
+_cir	Tirkumfl'exo
+_tld	muanduh,e~||tigu'a~
+_brv	br'eBe
+
+// numbers
+?1  _0lang   _^_es   // speak numbers in Spanish
