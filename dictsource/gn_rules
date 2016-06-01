@@ -1,7 +1,7 @@
 
 // guaraní translation rules
 // This file is UTF-8 encoded
-// Last update: 7 march 2016
+// Last update: 22 april 2016
 
 .replace
 ʻ	' // guarani puso U+02BB
@@ -13,8 +13,8 @@
 ğ	ĝ
 
 .group '
-	'	?
-	A) ' (A	?
+	'	_!
+	A) ' (A	_!
 
 .group a
 	a	a
@@ -23,7 +23,7 @@
 	á	''a
 
 .group ã
-	ã	a~
+	ã	''a~
 
 .group e
 	e	e
@@ -32,10 +32,10 @@
 	é	''e
 
 .group ẽ // latin e with tilde
-	ẽ	e~
+	ẽ	''e~
 
 .group ê
-	ê	e~
+	ê	''e~
 
 .group i
 	i	i
@@ -44,7 +44,7 @@
 	í	''i
 
 .group ĩ
-	ĩ	i~
+	ĩ	''i~
 
 .group o
 	o	o
@@ -53,7 +53,7 @@
 	ó	''o
 
 .group õ
-	õ	o~
+	õ	''o~
 
 .group u
 	u	u
@@ -62,7 +62,7 @@
 	ú	''u
 
 .group ũ
-	ũ	u~
+	ũ	''u~
 
 .group y
 	y 	y
@@ -71,7 +71,7 @@
 	ý	''y
 
 .group ỹ // latin y with tilde
-	ỹ	y~
+	ỹ	''y~
 
 // consonants
 
@@ -106,8 +106,9 @@
 	p	p
 
 .group r
-	r	@-*
-	A) r (A	R
+	r	r
+	A) r (A	r
+	rr	R2
 
 .group s
 	s	s
@@ -116,7 +117,8 @@
 	t	t
 
 .group v
-	v	v
+	v	b
+	A) v (A	B
 
 .group ch
 	ch	S
@@ -143,7 +145,9 @@
 
 .group c
 	c	k
-	_) ch	tS // allow _ch
+	_) ch	S
+	c (Y	T // spanish words
+	ck	k:
 
 .group d
 	d	d
