@@ -1,8 +1,7 @@
 
 //====================================================
-//  guaraní
+//  guarani: Update 14 march 2016
 //====================================================
-
 
 phoneme a
   vowel starttype #a endtype #a
@@ -17,9 +16,9 @@ phoneme a~
   vowel  starttype #a  endtype #a
   length 190
   IF thisPh(isWordEnd) AND thisPh(isStressed) THEN
-    FMT(vnasal/aa_n3)
+    FMT(vnasal/a#_n2, 90)
   ENDIF
-  FMT(vnasal/aa_n4)
+  FMT(vnasal/a_n, 80)
 endphoneme
 
 phoneme e
@@ -34,7 +33,7 @@ endphoneme
 phoneme e~
   vowel  starttype #e  endtype #e
   length 200
-  FMT(vnasal/ee_n2)
+  FMT(vnasal/e_n)
 endphoneme
 
 phoneme i
@@ -58,7 +57,7 @@ endphoneme
 phoneme o~
   vowel  starttype #o  endtype #o
   length 190
-  FMT(vnasal/oo_n)
+  FMT(vnasal/o_n)
 endphoneme
 
 phoneme u
@@ -87,7 +86,32 @@ phoneme y~ // guarani ỹ
 endphoneme
 
 
-// consonats
+// consonants
+
+phoneme b
+  vcd blb stop
+  IF nextPh(isVowel) OR nextPh(isRhotic) OR nextPh(isLiquid) THEN
+    IF prevPh(isPause) OR prevPh(isNasal) THEN
+    ELSE
+      ChangePhoneme(B)
+    ENDIF
+  ENDIF
+
+  CALL base/b
+endphoneme
+
+phoneme r
+  vcd alv flp rhotic
+  brkafter
+  ipa ɾ
+  lengthmod 3
+
+  IF nextPhW(isVowel) THEN
+    ChangePhoneme(**)
+  ENDIF
+
+  CALL base/*
+endphoneme
 
 phoneme g
   vcd vel stop
